@@ -17,9 +17,11 @@ Skrip ini memungkinkan pengguna untuk mengirim token ERC-20 secara massal di jar
 ## 🔧 Instalasi
 Clone repositori ini dan install dependensi:
 ```
-git clone https://github.com/yourusername/bulk-token-sender.git
-cd bulk-token-sender
-npm install
+~# git clone https://github.com/yourusername/bulk-token-sender.git
+~# cd bulk-token-sender
+~# apt install nodejs
+~# npm install dotenv ethers fs csv-parser
+~# npm install
 ```
 
 ## ⚙️ Konfigurasi
