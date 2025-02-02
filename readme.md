@@ -25,7 +25,8 @@ Clone repositori ini dan install dependensi:
 ```
 
 ## ⚙️ Konfigurasi
-- Script file bulksend.js
+- Edit Script file bulksend.js Dan ganti Token Adreess yang mau dikirim
+- <b><i>nano file bulksend.js</i></b>
 ```
 require("dotenv").config();
 const { ethers } = require("ethers");
@@ -112,24 +113,26 @@ async function sendTokens() {
 sendTokens();
 ```
 
-- Buat file .env di root directory dan tambahkan:
-<pre> 
-PRIVATE_KEY=your_private_key_here
-</pre>
+- Edit file .env di root directory dan tambahkan Private key Wallet: 
+- <b><i>nano .env</i></b>
+``` 
+  PRIVATE_KEY=your_private_key_here
+```
 
-- Siapkan file recipients.csv dengan format berikut:
-<pre>
-address,amount
-0x1234...,10
-0x5678...,15
-</pre>
+- Edit file recipients.csv dengan format berikut: 
+-  <b><i>nano recipients.csv</i></b>
+```
+  address,amount
+  0x1234...,10
+  0x5678...,15
+```
 
 ## ▶️ Penggunaan
 Jalankan skrip dengan perintah berikut:
 
-<pre>
+```
   ~# node bulksend.js
-</pre>
+```
 
 ## 📝 Catatan
 - Pastikan wallet Anda memiliki cukup token dan ETH untuk biaya gas.
