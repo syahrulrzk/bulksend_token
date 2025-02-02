@@ -128,7 +128,7 @@ address,amount
 Jalankan skrip dengan perintah berikut:
 
 <pre>
-  node script.js
+  ~# node bulksend.js
 </pre>
 
 ## 📝 Catatan
