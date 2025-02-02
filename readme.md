@@ -31,12 +31,12 @@ const fs = require("fs");
 const csv = require("csv-parser");
 
 // Konfigurasi Jaringan
-const RPC_URL = "wss://ethereum-sepolia-rpc.publicnode.com";
+const RPC_URL = "wss://ethereum-sepolia-rpc.publicnode.com"; // Pilih RPC server yg bagus
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
-const TOKEN_ADDRESS = "0xa2efb0e5d6580C9c9C13b09b0b87E104E0916475";
+const TOKEN_ADDRESS = "0xa2efb0e5d6580C9c9C13b09b0b87E104E0916475"; // Token address yang mau di kirim
 const DECIMALS = 18;
-const GAS_PRICE = ethers.parseUnits("10", "gwei");
-const GAS_LIMIT = 150000;
+const GAS_PRICE = ethers.parseUnits("10", "gwei"); // Gwei bisa di tambah atau kurang ( semakain besar, semakain cepat untuk pengirimanya )
+const GAS_LIMIT = 150000; // Atur sesuai 
 const DELAY_SECONDS = 5; // Delay antar transaksi
 
 // ABI Kontrak ERC-20
